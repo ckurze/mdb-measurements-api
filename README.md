@@ -33,14 +33,14 @@ python import_metrics.py \
 
 ## Created Collections
 
-* available_measurements_database: all available measures for a database
-* available_measurements_disk: all available measures for a disk partition
-* available_measurements_host: all available measures for a host
-* clusters: detailled information about the cluster (as provided by the id calling the script)
-* cluster_hosts: all hosts of the cluster
-* cluster_host_databases: all databases on each host of the cluster
-* cluster_host_disk_partitions: all disk partitions of each host
-* cluster_summarized_info: the summarized information used for querying the measurements
-* metrics_hosts: the hardware metrics for each host of the provided timespan and granularity
-* metrics_databases: the database statistics for each database on each host of the provided timespan and granularity
-* metrics_disk_partitions: the disk usage measurements for each disk partition on each host of the provided timespan and granularity
+* `available_measurements_database`: all available measures for a database (= output of API call)
+* `available_measurements_disk`: all available measures for a disk partition (= output of API call)
+* `available_measurements_host`: all available measures for a host (= output of API call)
+* `clusters`: detailled information about the cluster (as provided by the id calling the script) (= output of API call)
+* `cluster_hosts`: all hosts of the cluster (= output of API call)
+* `cluster_host_databases`: all databases on each host of the cluster (= output of API call)
+* `cluster_host_disk_partitions`: all disk partitions of each host (= output of API call)
+* `cluster_summarized_info`: the summarized information used for querying the measurements
+* `metrics_hosts`: the hardware metrics for each host of the provided timespan and granularity (= output of API call)
+* `metrics_databases`: the database statistics for each database on each host of the provided timespan and granularity (= output of API call)
+* `metrics_disk_partitions`: the disk usage measurements for each disk partition on each host of the provided timespan and granularity (= output of API call)
