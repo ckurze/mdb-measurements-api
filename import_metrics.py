@@ -3,13 +3,13 @@ import requests
 from pprint import pprint
 import pymongo
 
-parser = argparse.ArgumentParser(description='Import Metrics from OpsManager / Atlas API')
-parser.add_argument('--opsmanager_baseurl', required=True, help='Base URL of OpsManager / Atlas Cluster, no trailing slash (http://172.16.4.50:8080/api/public/v1.0 / https://cloud.mongodb.com/api/atlas/v1.0)')
+parser = argparse.ArgumentParser(description='Import Metrics from OpsManager API')
+parser.add_argument('--opsmanager_baseurl', required=True, help='Base URL of OpsManager, no trailing slash (e.g. http://172.16.4.50:8080/api/public/v1.0)')
 parser.add_argument('--opsmanager_username', required=True, help='Username for authentication of API')
 parser.add_argument('--opsmanager_apikey', required=True, help='API key for authentication of API')
 
-parser.add_argument('--opsmanager_groupid', required=True, help='The id of the Group / Project in OpsManager / Atlas')
-parser.add_argument('--opsmanager_clusterid', required=True, help='The id of the Cluster in OpsManager / Atlas')
+parser.add_argument('--opsmanager_groupid', required=True, help='The id of the Group / Project in OpsManager')
+parser.add_argument('--opsmanager_clusterid', required=True, help='The id of the Cluster in OpsManager')
 
 parser.add_argument('--target_mongouri', required=True, help='The URI of the target mongodb cluster (mongodb://USER:PASSWORD@server1:port,server2:port,server3.port), no mongodb+srv syntax supported')
 parser.add_argument('--target_mongodatabase', required=True, help='Target database to store metadata and metrics')

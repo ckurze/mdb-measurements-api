@@ -1,6 +1,12 @@
-# Demo for MongoDB OpsManager / Atlas API for importing measurements
+# Demo for MongoDB OpsManager API for importing measurements
 
-Example API calls to OpsManager / Atlas in order to query measurements for all databases, disk partitions, and hosts of a cluster.
+Example API calls to OpsManager in order to query measurements for all databases, disk partitions, and hosts of a cluster.
+
+In order to query MongoDB Atlas API, slightly different calls are needed.
+
+Please refer to the documentation for further information:
+* OpsManager API Resources: https://docs.opsmanager.mongodb.com/current/reference/api/measurements/
+* Atlas API Resources: https://docs.atlas.mongodb.com/reference/api/monitoring-and-logs/
 
 ## Usage
 
